@@ -1,24 +1,23 @@
 # Sistema de Localización de Mercadería — Materiales Los Polas
 
-Prototipo de consola del TP3 (Seminario de Práctica Informática).
 
-La idea es simple: en el corralón nadie tiene un registro de dónde está cada cosa.
-Este prototipo deja cargar productos con su ubicación (pasillo, estantería, nivel, cajón)
+Idea: en el corralón nadie tiene un registro de dónde está cada cosa.
+Este prototipo nos deja cargar productos con su ubicación (pasillo, estantería, nivel, cajón)
 y buscarlos por nombre o código. Si el empleado no se acuerda, lo escribe y el sistema le dice dónde ir.
 
-## Qué se puede hacer
+## Cosas que se puede hacer
 
 - Login con rol (Administrador o Empleado)
 - Alta, modificación y baja lógica de productos
 - Cargar ubicaciones
-- Buscar por texto (pasa todo a minúsculas y saca espacios)
+- Buscar por texto
 - Ver la ubicación completa
 - Que quede registrada cada búsqueda
 - Listar productos
 - Un reporte simple de búsquedas (solo el admin)
 - Todo se guarda en MySQL
 
-## Cómo correrlo
+## Cómo ejecutarlo
 
 1. Java 17 o más, y MySQL (con XAMPP anda bien).
 2. Ejecutar `sql/script.sql` en phpMyAdmin.
@@ -27,7 +26,7 @@ y buscarlos por nombre o código. Si el empleado no se acuerda, lo escribe y el 
 4. Agregar el MySQL Connector/J al proyecto.
 5. Correr `Main`.
 
-### Usuarios de prueba
+### Usuarios para la prueba
 
 | Usuario    | Contraseña       | Rol           |
 |------------|------------------|---------------|
@@ -38,11 +37,11 @@ y buscarlos por nombre o código. Si el empleado no se acuerda, lo escribe y el 
 ## De qué está hecho
 
 - Java 17
-- MySQL (XAMPP)
+- MySQL
 - JDBC
-- Consola (la GUI queda para después, como se había planteado en el TP2)
+- Consola
 
-## Cómo está armado
+## Armado
 
 Tres capas: la consola, la lógica de negocio y los DAO que hablan con la base.
 
